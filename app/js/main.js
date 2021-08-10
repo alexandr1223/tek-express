@@ -213,6 +213,18 @@ $(function () {
     }
     sortMarketplace();
 
+    function addToCartModal() {
+        document.querySelectorAll('.market-item__btn').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.market-modal').classList.add('market-modal--active')
+            })
+        })
+        document.querySelector('.market-modal__btn--further').addEventListener('click', () => {
+            document.querySelector('.market-modal').classList.remove('market-modal--active')
+        })
+    }
+    addToCartModal();
+
     $(document).ready(function(){
         $('.review__slider').slick({
             infinite: true,
