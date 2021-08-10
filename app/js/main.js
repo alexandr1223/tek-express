@@ -186,27 +186,30 @@ $(function () {
     });
 
     function sortMarketplace() {
-        let fourElement = document.querySelector('.market-item__sortItem--four'),
-        oneElement = document.querySelector('.market-item__sortItem--one'),
-        block = document.querySelector('.market-item__block'),
-        products = document.querySelectorAll('.market-item__product')
+        let fourElement = document.querySelector('.market-list__sortItem--four'),
+        oneElement = document.querySelector('.market-list__sortItem--one'),
+        block = document.querySelector('.market-list__block'),
+        products = document.querySelectorAll('.market-list__product')
 
-        oneElement.addEventListener('click', () => {
-            oneElement.classList.add('market-item__sortItem--active')
-            fourElement.classList.remove('market-item__sortItem--active')
-            block.style.cssText = 'grid-template-columns: 1fr'
-            products.forEach(item => {
-                item.classList.add('market-item__product--row')
+        if (block) {
+            oneElement.addEventListener('click', () => {
+                oneElement.classList.add('market-list__sortItem--active')
+                fourElement.classList.remove('market-list__sortItem--active')
+                block.style.cssText = 'grid-template-columns: 1fr'
+                products.forEach(item => {
+                    item.classList.add('market-list__product--row')
+                })
             })
-        })
-        fourElement.addEventListener('click', () => {
-            oneElement.classList.remove('market-item__sortItem--active')
-            fourElement.classList.add('market-item__sortItem--active')
-            block.style.cssText = 'grid-template-columns: 1fr 1fr 1fr 1fr'
-            products.forEach(item => {
-                item.classList.remove('market-item__product--row')
+            fourElement.addEventListener('click', () => {
+                oneElement.classList.remove('market-list__sortItem--active')
+                fourElement.classList.add('market-list__sortItem--active')
+                block.style.cssText = 'grid-template-columns: 1fr 1fr 1fr 1fr'
+                products.forEach(item => {
+                    item.classList.remove('market-list__product--row')
+                })
             })
-        })
+        }
+        
     }
     sortMarketplace();
 
@@ -225,6 +228,44 @@ $(function () {
             focusOnSelect: true,
             prevArrow: "<img src='../images/svg/arrow.svg' class='prev' alt=''>",
             nextArrow: "<img src='../images/svg/arrow.svg' class='next' alt=''>",
+            responsive: [
+                {
+                  breakpoint: 1440,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 990,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    autoplay: false,
+                    speed: 500
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    speed: 500
+                  }
+                }
+            ]
+        });
+    });
+
+    $(document).ready(function(){
+        $('.market-item__slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: "<img src='../images/svg/big-arrow.png' class='prev' alt=''>",
+            nextArrow: "<img src='../images/svg/big-arrow.png' class='next' alt=''>",
             responsive: [
                 {
                   breakpoint: 1440,

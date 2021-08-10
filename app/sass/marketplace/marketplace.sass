@@ -1,4 +1,4 @@
-.market-item
+.market-list
     padding-top: 60px
     padding-bottom: 55px
     .container
@@ -125,3 +125,129 @@
         cursor: pointer
     &__dot
         letter-spacing: .1em
+
+.market-item
+    padding-top: 60px
+    padding-bottom: 85px
+    &__block
+        margin-top: 100px
+        display: flex
+    &__image
+        width: 540px
+        height: 360px
+        object-fit: cover
+        border-radius: 5px
+        margin-right: 63px
+    &__title
+        margin-bottom: 10px
+        line-height: 44px
+        text-transform: uppercase
+        font-size: 30px
+        font-weight: 400
+    &__text
+        margin-bottom: 44px
+        max-width: 383px
+        line-height: 28px
+    &__price
+        font-size: 22px
+        margin-bottom: 25px
+        color: #FE0182
+    &__sliderPrice
+        font-size: 22px
+        margin-bottom: 12px
+        color: #FE0182
+        text-align: center
+    &__calc
+        display: flex
+        margin-bottom: 33px
+        span
+            font-size: 25px
+            height: 39px
+            line-height: 39px
+            width: 59px
+            border: 2px solid #C4C4C4
+            text-align: center
+            color: rgba(80, 79, 80, 1)
+            margin: 0 3px
+    &__plus
+        width: 40px
+        height: 39px
+        position: relative
+        background: rgba(80, 79, 80, 1)
+        cursor: pointer
+        svg
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &__minus
+        width: 40px
+        height: 39px
+        background: rgba(196, 196, 196, 1)
+        position: relative
+        cursor: pointer
+        svg
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &__btn
+        font-size: 14px
+        width: 182px
+        line-height: 43px
+        height: 43px
+        margin-left: 0
+    &__similarTitle
+        font-size: 30px
+        margin-bottom: 51px
+    &__img
+        margin: 0 auto
+        margin-bottom: 9px
+        width: 200px
+        height: 200px
+        object-fit: cover
+        border-radius: 5px
+    &__product
+        margin: 0 25px        
+        padding-bottom: 25px
+    &__productTitle
+        font-size: 24px
+        margin-bottom: 7px
+        text-align: center
+        color: #676767
+    &__productText
+        text-align: center
+        font-size: 16px
+        margin-bottom: 8px
+        line-height: 24px
+        color: #676767
+    &__articul
+        text-align: center
+        margin-bottom: 16px
+        text-align: center
+        font-size: 18px
+        font-weight: 500
+        color: #676767
+    &__price
+        font-size: 22px
+        margin-bottom: 18px
+        color: #FE0182
+        text-align: center
+    &__slider
+        margin: 0 20px
+        padding: 30px 0
+    &__sliderBtn
+        font-size: 14px
+        width: 182px
+        line-height: 43px
+        height: 43px
+    .prev
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translate(0, -50%) rotate(180deg)
+    .next
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translate(0, -50%)
