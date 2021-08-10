@@ -1,0 +1,321 @@
+.our-services
+    padding-top: 60px
+    &__title
+        margin-top: 53px
+        margin-bottom: 50px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 0 170px
+    &__item
+    &__image
+        margin: 0 auto
+        margin-bottom: 0
+        height: 180px
+        img
+            height: 100%
+            width: auto
+            display: block
+            margin: 0 auto
+    &__text
+        text-align: center
+        font-size: 18px
+        line-height: 27px
+
+.customer-portal
+    padding-top: 60px
+    padding-bottom: 240px
+    .container   
+        position: relative
+    &__title
+        margin: 0 auto
+        margin-top: 50px
+        max-width: 584px
+        margin-bottom: 50px
+    &__abs
+        position: absolute
+        &--1
+            left: 0
+            top: 64px
+        &--2
+            top: 425px
+            left: 260px
+            width: 220px
+        &--3
+            right: 0
+            top: 40px
+        &--4
+            left: -30px
+            top: 330px
+            width: 287px
+            height: auto
+        &--5
+            right: 0
+            top: 340px
+            width: 336px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 50px 175px
+    &__item
+        max-width: 308px
+        &--left
+            margin-left: auto
+            max-width: 332px
+        &--right
+            margin-right: auto
+            max-width: 308px
+        &:last-child
+            grid-column-start: 1
+            grid-column-end: 3
+            margin: 0 auto
+    &__text
+        font-size: 18px
+        line-height: 27px
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 40px
+    &__btn
+        display: block
+        margin: 0 auto
+        font-size: 16px
+        width: 210px
+        height: 50px
+        line-height: 50px
+        padding: 0
+        &--phone
+            background: #E3E3E3
+            border: 1px solid #fe0182
+            border-radius: 62px
+            color: #fe0182
+            box-shadow: 0px 0px 9px rgba(254, 1, 130, 0.56)
+            font-size: 16px
+            width: 210px
+            height: 50px
+            line-height: 50px
+            padding: 0
+
+.flooring
+    padding-top: 60px
+    .container   
+        position: relative
+    &__title
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 40px
+    &__block
+        position: relative
+        height: 100%
+        margin-bottom: 150px
+        height: 552px
+    &__image
+        position: absolute
+        right: -120px
+        top: -40px
+        height: 552px
+        z-index: 1
+    &__item
+        position: absolute
+        font-size: 18px
+        line-height: 27px
+        z-index: 2
+        &--first
+            max-width: 280px
+            text-align: center
+            top: 0
+            left: 100px
+            &:after
+                content: ''
+                background: url('../images/flooring1.png') center center/cover no-repeat
+                display: block
+                height: auto
+                width: 164px
+                height: 83px
+                position: absolute
+                right: -140px
+                top: 40px
+        &--second
+            top: 140px
+            left: 80px
+            &:after
+                content: ''
+                background: url('../images/flooring2.png') center center/cover no-repeat
+                display: block
+                height: auto
+                width: 331px
+                height: 270px
+                position: absolute
+                right: -350px
+                top: -94px
+        &--third
+            top: 100px
+            max-width: 278px
+            left: -50px
+            top: 250px
+            text-align: center
+            &:after
+                content: ''
+                background: url('../images/flooring3.png') center center/cover no-repeat
+                display: block
+                height: auto
+                width: 213px
+                height: 152px
+                position: absolute
+                right: -240px
+                top: -44px
+        &--four
+            top: 370px
+            max-width: 221px
+            text-align: center
+            left: 60px
+            &:after
+                content: ''
+                background: url('../images/flooring4.png') center center/cover no-repeat
+                display: block
+                height: auto
+                width: 156px
+                height: 82px
+                position: absolute
+                right: -170px
+                top: -46px
+
+.contact 
+    padding-top: 60px
+    padding-bottom: 150px
+    position: relative
+    &__image1
+        position: absolute
+        left: 0
+        bottom: 0
+    &__image2
+        position: absolute
+        right: 0
+        bottom: 0
+    &__title
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 40px
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 190px
+    &__subtitle
+        max-width: 314px
+        margin-bottom: 21px
+        font-size: 20px
+        text-align: center
+        margin-left: auto
+    &__left
+        width: 380px
+        display: flex
+        flex-direction: column
+        margin-left: auto
+    &__form
+        display: flex
+        flex-direction: column
+        padding-right: 30px
+    &__item
+        display: flex
+        align-items: center
+        margin-left: auto
+        &:not(:last-child)
+            margin-bottom: 20px
+        label
+            margin-right: 11px
+            font-size: 18px
+            line-height: 27px
+    &__input
+        height: 40px
+        width: 250px
+        padding: 10px 15px
+        font-size: 16px
+        border-radius: 5px
+        border: 1px solid #868686
+    &__textarea
+        height: 110px
+        width: 250px
+        padding: 10px 20px
+        font-size: 16px
+        border-radius: 5px
+        border: 1px solid #868686
+    &__btn
+        margin-right: auto
+        margin-right: 20px
+        margin-top: 6px
+    &__right
+        width: 380px
+    &__link
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 40px
+        &:nth-child(5)
+            margin-bottom: 10px !important
+        label
+            margin-right: 11px
+            font-size: 18px
+            line-height: 27px
+            width: 66px
+            text-align: right
+        a
+            font-size: 18px
+            line-height: 27px
+            color: #000
+    
+.home-page
+    padding-top: 60px
+    .container
+        max-width: 1303px
+    &__title
+        margin: 0 auto
+        margin-top: 53px
+        text-align: center
+        max-width: 890px
+        margin-bottom: 25px
+        font-size: 38px
+        line-height: 56px
+    &__info
+        width: 630px
+        border-radius: 64px
+        background: #fff
+        box-shadow: 0px 0px 17px rgba(254, 1, 130, 0.49)
+        padding: 13px 26px
+        font-size: 18px
+        line-height: 27px
+        text-align: center
+        margin: 0 auto
+        margin-bottom: 47px
+        a
+            color: #FE0182
+    &__block
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 46px
+    &__item
+        background: #F2F2F1
+        border-radius: 17px
+        padding: 36px 24px
+        width: 291px
+        svg
+            display: block
+            margin: 0 auto
+            margin-bottom: 17px
+    &__text
+        text-align: center
+        font-size: 14px
+        line-height: 22px
+        li
+            position: relative
+            width: max-content
+            text-align: center
+            margin: 0 auto
+            &::before
+                content: ''
+                width: 4px 
+                height: 4px
+                border-radius: 50%
+                display: block
+                background: #000
+                position: absolute
+                left: -10px
+                top: 50%
+                transform: translateY(-50%)
