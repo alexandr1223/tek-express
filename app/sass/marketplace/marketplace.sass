@@ -1,0 +1,127 @@
+.market-item
+    padding-top: 60px
+    padding-bottom: 55px
+    .container
+        max-width: 1100px
+    &__banner
+        margin-top: 70px
+        text-align: center
+        width: 100%
+        height: 200px
+        padding: 0 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 5px
+        box-shadow: 0px 0px 24px rgba(254, 1, 130, 0.72)
+        margin-bottom: 50px
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 2px solid #767676
+        padding-bottom: 18px
+    &__sort
+        display: flex
+    &__sortItem
+        cursor: pointer
+        &:not(:last-child)
+            margin-right: 20px
+        &--active
+            svg
+                path,rect
+                    transition: .4s
+                    fill: rgb(118, 118, 118) !important
+    &__search
+        width: 218px
+        position: relative
+        input
+            width: 218px
+            height: 36px
+            font-size: 15px
+            border: 2px solid #767676
+            border-radius: 2px
+            padding: 10px 16px
+        svg
+            position: absolute
+            right: 11px
+            top: 50%
+            transform: translateY(-50%)
+    &__block
+        margin-top: 31px
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 56px 97px
+        transition: .4s
+    &__product
+        display: flex
+        flex-direction: column
+        &--row
+            flex-direction: row
+            .market-item__info
+                display: flex
+                flex-direction: column
+                margin-left: 111px
+                align-items: flex-start
+                max-width: 460px
+            .market-item__productText
+                text-align: left
+                margin-bottom: 24px
+            .market-item__buy
+                margin-top: 60px
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+    &__img
+        margin-bottom: 9px
+        width: 200px
+        height: 200px
+        object-fit: cover
+        border-radius: 5px
+    &__productTitle
+        font-size: 24px
+        margin-bottom: 15px
+        text-align: center
+        color: #676767
+    &__productText
+        text-align: center
+        font-size: 16px
+        margin-bottom: 8px
+        line-height: 24px
+        color: #676767
+    &__articul
+        text-align: center
+        margin-bottom: 16px
+        text-align: center
+        font-size: 18px
+        font-weight: 500
+        color: #676767
+    &__price
+        font-size: 22px
+        margin-bottom: 18px
+        color: #FE0182
+        text-align: center
+    &__btn
+        font-size: 14px
+        width: 182px
+        line-height: 43px
+        height: 43px
+
+.pagination
+    display: flex
+    align-items: center
+    margin: 0 auto
+    margin-top: 54px
+    width: max-content
+    &__item
+        font-size: 20px
+        color: #676767
+    &__prev
+        margin-right: 13px
+        cursor: pointer
+    &__next
+        transform: rotate(180deg)
+        margin-left: 13px
+        cursor: pointer
+    &__dot
+        letter-spacing: .1em

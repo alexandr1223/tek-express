@@ -185,6 +185,31 @@ $(function () {
         
     });
 
+    function sortMarketplace() {
+        let fourElement = document.querySelector('.market-item__sortItem--four'),
+        oneElement = document.querySelector('.market-item__sortItem--one'),
+        block = document.querySelector('.market-item__block'),
+        products = document.querySelectorAll('.market-item__product')
+
+        oneElement.addEventListener('click', () => {
+            oneElement.classList.add('market-item__sortItem--active')
+            fourElement.classList.remove('market-item__sortItem--active')
+            block.style.cssText = 'grid-template-columns: 1fr'
+            products.forEach(item => {
+                item.classList.add('market-item__product--row')
+            })
+        })
+        fourElement.addEventListener('click', () => {
+            oneElement.classList.remove('market-item__sortItem--active')
+            fourElement.classList.add('market-item__sortItem--active')
+            block.style.cssText = 'grid-template-columns: 1fr 1fr 1fr 1fr'
+            products.forEach(item => {
+                item.classList.remove('market-item__product--row')
+            })
+        })
+    }
+    sortMarketplace();
+
     $(document).ready(function(){
         $('.review__slider').slick({
             infinite: true,
