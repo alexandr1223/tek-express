@@ -387,3 +387,109 @@
         right: -260px
         bottom: -330px
         z-index: 1
+
+.shopping-cart
+    padding-top: 120px
+    &__title
+        font-size: 32px
+        line-height: 47px
+        margin-bottom: 37px
+        text-align: center
+        text-transform: uppercase
+        font-weight: 400
+    &__block    
+        display: grid
+        grid-template-columns: 1fr 
+        width: 920px
+        grid-gap: 50px
+        margin: 0 auto
+    &__item
+        display: flex
+        align-items: center
+    &__image
+        width: 150px
+        height: 150px
+        margin-right: 50px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__content
+        display: flex
+        flex-direction: column
+    &__itemTitle
+        font-size: 22px
+        line-height: 32px
+        margin-bottom: 7px
+        font-weight: 400
+    &__itemText
+        font-size: 14px
+        line-height: 24px
+        margin-bottom: 9px
+        max-width: 468px
+    &__articul
+        font-size: 16px
+        line-height: 23px
+    &__nav
+        margin-left: auto
+    &__price
+        color: #FE0182
+        font-size: 24px
+        margin-bottom: 27px
+        text-align: center
+    &__calc
+        display: flex
+        margin-bottom: 33px
+        span
+            font-size: 18px
+            height: 28px
+            line-height: 28px
+            width: 42px
+            border: 2px solid #C4C4C4
+            text-align: center
+            color: rgba(80, 79, 80, 1)
+            margin: 0 3px
+    &__plus
+        width: 28px
+        height: 28px
+        position: relative
+        background: rgba(80, 79, 80, 1)
+        cursor: pointer
+        svg
+            position: absolute
+            width: 12px
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &__minus
+        width: 28px
+        height: 28px
+        background: rgba(196, 196, 196, 1)
+        position: relative
+        cursor: pointer
+        svg
+            position: absolute
+            width: 12px
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+    &__bottom
+        width: 850px
+        display: flex
+        align-items: center
+        margin: 0 auto
+        margin-top: 58px
+    &__quantity
+        display: flex
+        &:not(:last-child)
+            margin-right: 16px
+        span
+            border: 2.78271px solid #C4C4C4
+            border-radius: 3px
+            padding: 16px 25px
+            font-size: 16px
+            &:not(:last-child)
+                margin-right: 3px
+    &__btn
+        margin-left: auto
+
