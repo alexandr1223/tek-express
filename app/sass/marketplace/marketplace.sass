@@ -53,21 +53,24 @@
         grid-template-columns: 1fr 1fr 1fr 1fr
         grid-gap: 56px 97px
         transition: .4s
+        &--active
+            grid-template-columns: 1fr
     &__product
         display: flex
         flex-direction: column
         &--row
             flex-direction: row
-            .market-item__info
+            .market-list__info
+                margin-top: 10px
                 display: flex
                 flex-direction: column
                 margin-left: 111px
                 align-items: flex-start
                 max-width: 460px
-            .market-item__productText
+            .market-list__productText
                 text-align: left
                 margin-bottom: 24px
-            .market-item__buy
+            .market-list__buy
                 margin-top: 60px
                 display: flex
                 flex-direction: column
@@ -178,7 +181,7 @@
         position: relative
         background: rgba(80, 79, 80, 1)
         cursor: pointer
-        svg
+        svg,img
             position: absolute
             left: 50%
             top: 50%
@@ -189,7 +192,7 @@
         background: rgba(196, 196, 196, 1)
         position: relative
         cursor: pointer
-        svg
+        svg,img
             position: absolute
             left: 50%
             top: 50%
@@ -455,7 +458,8 @@
         position: relative
         background: rgba(80, 79, 80, 1)
         cursor: pointer
-        svg
+        svg,img
+            display: block
             position: absolute
             width: 12px
             left: 50%
@@ -467,7 +471,8 @@
         background: rgba(196, 196, 196, 1)
         position: relative
         cursor: pointer
-        svg
+        svg,img
+            display: block
             position: absolute
             width: 12px
             left: 50%

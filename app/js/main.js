@@ -1,11 +1,11 @@
 $(function () {
 
     console.log(window.innerWidth)
-    if (window.innerWidth > 990) {
-        new WOW().init();
-    } else {
-        document.querySelector('.wow').style.visibility = 'visible'
-    }
+    // if (window.innerWidth > 990) {
+    //     new WOW().init();
+    // } else {
+    //     document.querySelector('.wow').style.visibility = 'visible'
+    // }
 
     $('img.img-svg').each(function(){
         var $img = $(this);
@@ -195,7 +195,7 @@ $(function () {
             oneElement.addEventListener('click', () => {
                 oneElement.classList.add('market-list__sortItem--active')
                 fourElement.classList.remove('market-list__sortItem--active')
-                block.style.cssText = 'grid-template-columns: 1fr'
+                block.classList.add('market-list__block--active')
                 products.forEach(item => {
                     item.classList.add('market-list__product--row')
                 })
@@ -203,7 +203,7 @@ $(function () {
             fourElement.addEventListener('click', () => {
                 oneElement.classList.remove('market-list__sortItem--active')
                 fourElement.classList.add('market-list__sortItem--active')
-                block.style.cssText = 'grid-template-columns: 1fr 1fr 1fr 1fr'
+                block.classList.remove('market-list__block--active')
                 products.forEach(item => {
                     item.classList.remove('market-list__product--row')
                 })
@@ -296,7 +296,7 @@ $(function () {
                   }
                 },
                 {
-                  breakpoint: 480,
+                  breakpoint: 767,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
