@@ -41,12 +41,18 @@
                     display: flex
                     flex-direction: column
                     align-items: flex-start
-                // .market-list__img
-                //     width: 150px
-                //     height: 150px
-                //     margin-right: 40px
-                // .market-list__info
-                //     margin-right: 40px
+    .shopping-cart
+        padding-bottom: 75px
+        &__bottom
+            width: 100%
+            display: grid
+            grid-template-columns: 1fr
+            grid-gap: 20px
+            align-items: flex-start
+        &__btn
+            margin-left: 0
+        &__block
+            width: 100%
 
 @media (max-width: 767px)
     .market
@@ -164,3 +170,55 @@
                 //     margin-right: 40px
                 // .market-list__info
                 //     margin-right: 40px
+    .market-modal
+        padding: 20px
+        z-index: 20
+        &__image
+            margin: 0 auto
+            margin-bottom: 10px
+        &__title
+            margin-bottom: 0
+        &__block
+            display: flex
+            flex-direction: column
+            width: 100%
+            margin: 0 auto
+        &__text
+            font-size: 14px
+            margin: 10px 0
+        &__buttons
+            display: flex
+            flex-direction: column-reverse
+            margin-top: 20px
+        &__btn
+            margin: 0 auto
+            height: 40px
+            line-height: 40px
+            &--further
+                margin-top: 20px
+                height: 36px
+                line-height: 36px
+    .shopping-cart
+        &__item
+            display: flex
+            flex-direction: column
+        &__image
+            width: 100%
+            margin-right: 0
+            object-fit: cover
+            margin-bottom: 20px
+        &__nav
+            margin-right: auto
+            margin-top: 20px
+            display: flex
+            flex-direction: row
+            align-items: center
+        &__price
+            margin-right: 20px
+            margin-bottom: 0
+            margin-top: 0
+        &__calc 
+            margin-bottom: 0
+        &__quantity
+            span
+                padding: 12px 20px

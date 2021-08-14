@@ -498,3 +498,226 @@
     &__btn
         margin-left: auto
 
+.checkout
+    padding-top: 120px
+    &__title
+        text-align: center
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 65px
+    &__block
+        display: flex
+        justify-content: space-between
+    &__right
+        width: 340px
+        padding: 15px 15px 25px 15px
+        box-shadow: 0px 0px 11px rgba(254, 1, 130, 0.4)
+        border-radius: 6px
+    &__rightTitle
+        font-size: 24px
+        line-height: 35px
+        margin-bottom: 20px
+    &__rightItem
+        display: flex
+        margin-bottom: 9px
+        label
+            width: 150px
+            font-size: 17px
+            line-height: 25px
+        span
+            font-size: 17px
+            line-height: 25px
+            font-family: "CabinBold"
+    &__rightSum
+        margin-top: 10px
+        margin-bottom: 20px
+        display: flex
+        label
+            width: 150px
+            font-size: 21px
+            line-height: 31px
+        span
+            font-size: 21px
+            line-height: 31px
+            font-family: "CabinBold"
+    &__rightBtn
+        width: 226px
+        height: 42px
+        line-height: 42px
+        font-size: 14px
+    &__left
+        display: flex
+        flex-direction: column
+        width: 660px
+    &__type
+        width: 485px
+        display: flex
+        justify-content: space-between
+        margin-bottom: 64px
+    &__typeItem
+        padding: 10px 21px
+        font-size: 17px
+        box-shadow: 0px 0px 11px rgba(254, 1, 130, 0.4)
+        border-radius: 6px
+        text-align: center
+    &__fields
+        display: grid
+        grid-template-columns: 267px 1fr
+        grid-gap: 40px 30px
+        input
+            width: 215px
+            padding: 10px
+            font-size: 17px
+            border-radius: 4px
+            border: 1px solid #868686
+    &__input
+        display: flex
+        align-items: center
+        label
+            font-size: 15px
+            margin-right: 5px
+    &__label
+        text-align: right
+        width: 130px
+
+.order
+    display: flex
+    flex-direction: column
+    &__title
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 30px
+    &__item
+        display: flex
+        width: 744px
+        margin-bottom: 30px
+    &__image
+        width: 137px
+        height: 137px
+        margin-right: 75px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__content
+        display: flex
+        flex-direction: column
+    &__itemTitle
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 7px
+        font-weight: 600
+        &--center
+            text-align: center
+    &__itemText
+        font-size: 10px
+        line-height: 16px
+        margin-bottom: 9px
+        max-width: 320px
+    &__articul
+        font-size: 12px
+        line-height: 23px
+    &__nav
+        margin-left: auto
+        margin-right: 20px
+    &__price
+        text-align: center
+        color: rgba(254, 1, 130, 1)
+
+.delivery
+    &__title
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 30px
+    &__block
+        padding: 11px 14px
+        border-radius: 4px 
+        border: 1px solid #868686
+        width: 423px
+        margin-bottom: 30px
+    &__item
+        display: flex
+        align-items: center
+        position: relative
+        cursor: pointer
+        svg,img
+            display: block
+            margin-right: 12px
+    &__text
+        display: flex
+        flex-direction: column
+        span
+            display: block
+            font-size: 13px
+            font-family: "CabinBold"
+        p
+            font-size: 13px
+    &__arrow
+        position: absolute
+        right: 0
+        top: 15px
+        transform: translateY(-50%)
+        cursor: pointer
+        transition: .4s
+    &__fields
+        
+        display: none
+        flex-direction: column
+    &__input
+        display: flex
+        align-items: center
+        margin: 10px 0
+        input
+            width: 215px
+            padding: 10px
+            font-size: 17px
+            border-radius: 4px
+            border: 1px solid #868686
+        label
+            width: 100px
+            text-align: right
+            font-size: 15px
+            margin-right: 5px
+
+.payment       
+    &__title
+        font-size: 24px
+        font-weight: 400
+        margin-bottom: 30px
+    &__item
+        padding: 11px 14px
+        border-radius: 4px 
+        border: 1px solid #868686
+        width: 423px
+        margin-bottom: 30px
+    &__radio
+        input[type=radio]
+            display: none
+
+        label
+            display: inline-block
+            cursor: pointer
+            position: relative
+            margin-right: 0
+            user-select: none
+            font-size: 13px
+            font-weight: 700
+            font-family: "CabinBold"
+            display: flex
+            align-items: center
+            &:before
+                content: ""
+                display: inline-block
+                width: 22px
+                height: 22px
+                border-radius: 50%
+                border: 1px solid #000
+                margin-right: 10px
+                transition: .4s
+
+        input[type=radio]:checked + label:before
+            background: rgba(254, 1, 130, 1)
+            border: 1px solid #fff
+
+        label:hover:before
+            filter: brightness(120%)

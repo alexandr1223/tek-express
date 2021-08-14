@@ -214,14 +214,16 @@ $(function () {
     sortMarketplace();
 
     function addToCartModal() {
-        document.querySelectorAll('.market-item__btn').forEach(item => {
-            item.addEventListener('click', () => {
-                document.querySelector('.market-modal').classList.add('market-modal--active')
+        if (document.querySelector('.market-item__btn')) {
+            document.querySelectorAll('.market-item__btn').forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelector('.market-modal').classList.add('market-modal--active')
+                })
             })
-        })
-        document.querySelector('.market-modal__btn--further').addEventListener('click', () => {
-            document.querySelector('.market-modal').classList.remove('market-modal--active')
-        })
+            document.querySelector('.market-modal__btn--further').addEventListener('click', () => {
+                document.querySelector('.market-modal').classList.remove('market-modal--active')
+            })
+        }
     }
     addToCartModal();
 
@@ -267,6 +269,21 @@ $(function () {
                   }
                 }
             ]
+        });
+
+        $(".delivery__item").click(function(){
+            console.log('s')
+            $(".delivery__fields").fadeToggle();
+            $(".delivery__fields").css("display", "flex")
+            if ($(".delivery__fields").hasClass('active')) {
+                $(".delivery__fields").removeClass('active')
+                $('.delivery__arrow').css({"transform" : "rotate(0deg)"})
+            } else {
+                
+                $(".delivery__fields").addClass('active')
+                $('.delivery__arrow').css({"transform" : "rotate(90deg)"})
+            }
+            
         });
     });
 

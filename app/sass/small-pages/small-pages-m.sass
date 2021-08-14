@@ -1,0 +1,129 @@
+@media (max-width: 1280px)
+    .home-page
+        padding-bottom: 70px
+        &__block
+            grid-template-columns: 1fr 1fr
+            grid-gap: 50px 10px
+        &__title
+            font-size: 36px
+            width: 90%
+            line-height: 48px
+        &__info
+            font-size: 16px
+        &__item
+            margin: 0 auto
+    .contact
+        &__block
+            grid-gap: 100px
+            grid-template-columns: 1fr
+        &__left
+            margin: 0 auto
+        &__right
+            margin: 0 auto
+        &__link
+            margin: 0 auto
+            text-align: center
+            justify-content: center
+        &__subtitle
+            margin: 0 auto
+            margin-bottom: 20px
+        &__image1
+            img
+                width: 200px
+        &__image2
+            img
+                width: 300px
+        &__map
+            iframe
+                display: block
+                margin: 0 auto
+    .flooring
+        &__item
+            font-size: 16px
+            &--third
+                left: 0
+        &__block
+            margin-bottom: 0
+        &__image
+            width: 1700px
+            right: -200px
+            top: 20px
+            height: auto
+    .customer-portal
+        &__text
+            font-size: 16px
+        &__abs
+            display: none
+
+@media (max-width: 767px)
+    .home-page
+        padding-bottom: 70px
+        &__block
+            grid-template-columns: 1fr
+            grid-gap: 40px 10px
+        &__title
+            font-size: 24px
+            width: 90%
+            line-height: 32px
+        &__info
+            font-size: 14px
+            line-height: 20px
+            width: 100%
+        &__item
+            margin: 0 auto
+
+    .contact
+        &__btn
+            margin: 0 auto
+            margin-top: 10px
+        &__right
+            width: 100%
+        &__left
+            width: 100%
+        &__form
+            padding-right: 0
+        &__block
+            width: 100%
+        &__subtitle
+            max-width: 100%
+        &__input
+            width: 100%
+        &__image1
+            display: none
+        &__image2
+            display: none
+        &__map
+            iframe
+                width: 100%
+    .flooring
+        overflow: hidden
+        &__item
+            position: static
+            text-align: center
+            width: 100%
+            margin: 0 auto
+            &::after
+                display: none
+        &__block
+            display: flex
+            flex-direction: column
+            height: 400px
+        &__image
+            top: 200px
+            left: 0
+            right: unset
+    .customer-portal
+        padding-bottom: 100px
+        &__block
+            grid-template-columns: 1fr
+            grid-gap: 60px
+        &__item
+            width: 100%
+            max-width: 300px
+            margin: 0 auto
+            &:last-child
+                grid-column-end: 2
+            &--right
+                margin: 0 auto
+        &__text
+            margin-bottom: 20px
