@@ -1,0 +1,315 @@
+@media (max-width: 1200px)
+    .first
+        display: flex
+        flex-direction: column-reverse
+        &__btn
+            margin-top: 20px
+        &__video
+            margin-top: -105px
+        &__head
+            position: static
+            transform: translate(0)
+    .review
+        padding-bottom: 80px
+        &__title
+            margin-top: 30px
+        &__stars
+            margin-top: 20px
+            img
+                height: 100%
+        &__sliderHide
+            display: none
+        &__slider
+            margin-left: 0
+        &__text
+            font-size: 13px
+        .next
+            display: none !important
+        .prev
+            display: none !important
+    .customer
+        &__item
+            display: grid
+            grid-template-columns: 1fr
+            height: 100%
+            &--center
+                align-items: center
+                margin-bottom: 30px
+            img
+                display: block
+                width: 500px
+                height: auto
+                margin: 0 auto
+                margin-bottom: 20px
+    .instalation
+        padding-bottom: 30px
+        &__video
+            padding-top: 20px
+    .switch
+        padding: 60px 20px
+        height: 630px
+        padding-top: 40px
+        &-hide
+            display: none
+        &__subtitle
+            font-size: 16px
+            line-height: 130%
+        &__ceramic
+            font-size: 17px
+            line-height: 30px
+            width: 180px
+        &__dark,
+        &__light
+            margin: 30px 0
+            width: 209px
+        &__ecotek
+            font-size: 20px
+            width: 130px
+        &__line
+            height: 4px
+            bottom: -6px
+        &__block
+            width: 600px
+            margin: 0 auto
+            justify-content: space-between
+        &__click
+            top: -60px
+            right: 140px
+            span
+                font-size: 20px
+            svg
+                width: 41px
+                height: auto
+    .what-we-do
+        padding-top: 75px
+        &__image
+            height: 320px
+            img
+                width: 100%
+                height: auto
+        &__block
+            grid-template-columns: 1fr 1fr
+        &__item
+            max-width: 300px
+            margin: 0 auto
+            &:last-child
+                grid-column-start: 1
+                grid-column-end: 3
+                margin-top: -100px
+    .customer-banner
+        &__title
+            padding-top: 100px
+
+@media (max-width: 767px)
+    .flooring-advantages
+        &__title
+            padding-top: 30px
+            margin-bottom: 30px
+        &__block
+            grid-template-columns: 1fr
+            grid-gap: 30px
+        &__item
+            svg
+                display: block
+                width: 80px
+                margin: 0 auto
+        &__itemTitle
+            text-align: center
+        &__itemText
+            text-align: center
+            span
+                font-size: 16px
+                &:not(:last-child)
+                    margin-bottom: 8px
+                    
+                &::before
+                    display: none
+
+    .advantage
+        padding-top: 80px
+        padding-bottom: 60px
+        &__versus
+            flex-direction: column 
+        &__subtitle
+            font-size: 28px
+            margin: 0
+        &__vs
+            margin: 30px auto  
+            font-size: 46px
+        &__floor
+            margin-top: 0    
+
+    .install-advantage
+        &__block
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 40px
+        &__item
+            svg
+                display: block
+                margin: 0 auto 
+                width: 70px   
+        &__itemTitle
+            text-align: center
+            font-size: 20px
+            margin-top: 20px
+        &__itemText
+            text-align: center
+            font-size: 16px
+            line-height: 150%
+    .first
+        padding-top: 53px
+        &__video
+            display: none
+        &__logo
+            margin-top: 24px
+            img
+                width: 96px
+        &__title
+            max-width: 300px
+            line-height: 26px
+        &__subtitle
+            font-size: 12px
+            line-height: 17px
+        &__btn
+            margin-top: 30px
+    .first-mobile
+        display: block
+        overflow-x: scroll
+        position: relative
+        z-index: 1
+        &__video
+            width: 700px
+            height: 400px
+            
+            video
+                display: block
+                width: 700px
+                height: 400px
+                object-fit: cover
+    .review
+        padding-bottom: 100px
+        &__title
+            margin-top: 30px
+        &__stars
+            margin-top: 20px
+            img,svg
+                height: auto
+                width: 50px
+                margin: 0 8px
+        &__sliderHide
+            display: none
+        &__slider
+            margin-top: 20px
+        &__top
+            svg
+                width: 50px
+        &__item
+            height: 250px
+        .slick-track
+            padding: 10px 0
+    .customer
+        &__item
+            display: flex
+            flex-direction: column
+            grid-template-columns: 1fr
+            height: 100%
+            &--center
+                align-items: center
+                margin-bottom: 30px
+            img
+                display: block
+                width: 90%
+                height: 90%
+                margin: 0 auto
+    .instalation
+        padding-bottom: 80px
+        &__video
+            padding-top: 20px
+        &__smartText
+            height: auto
+        &__video
+            padding-top: 0
+    .switch
+        padding: 60px 20px
+        height: 330px
+        padding-top: 40px
+        &-hide
+            display: none
+        &__subtitle
+            font-size: 16px
+            line-height: 130%
+        &__ceramic
+            font-size: 9px
+            line-height: 13px
+            width: 80px
+        &__dark,
+        &__light
+            margin: 30px 0
+            width: 109px
+        &__ecotek
+            font-size: 13px
+            width: auto
+        &__line
+            height: 4px
+            bottom: -6px
+        &__block
+            width: 290px
+            margin: 0 auto
+            justify-content: space-between
+        &__click
+            top: -20px
+            right: 50px
+            span
+                font-size: 10px
+            svg
+                width: 21px
+                height: auto
+    .what-we-do
+        &__title
+            max-width: 300px
+            margin: 0 auto
+        &__block
+            grid-template-columns: 1fr
+        &__item
+            &:last-child
+                grid-column-end: 2
+                margin-top: 0
+        &__image
+            height: 100%
+        &__itemTitle
+            font-size: 18px
+            line-height: 26px
+        &__itemText
+            font-size: 16px
+            line-height: 20px
+    .customer-banner
+        height: 100%
+        background: unset
+        position: relative
+        overflow: hidden
+        padding-bottom: 20px
+        z-index: 2
+        margin-bottom: -80px
+        &__title
+            line-height: 100%
+        &__subtitle
+            font-size: 12px
+            line-height: 17px
+            max-width: 80%
+            text-align: center
+            margin: 0 auto
+    .custom
+        display: block
+        overflow-x: scroll
+        position: relative
+        z-index: 1
+        &__image
+            width: 700px
+            height: 400px
+            
+            img
+                display: block
+                width: 700px
+                height: 400px
+                object-fit: cover

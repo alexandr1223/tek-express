@@ -86,21 +86,12 @@ body
 		display: none
 	&__mobileLogo
 		display: none
-	&__logo
-		opacity: 0 
-		visibility: hidden
-		z-index: -10
-		transition: .4s
-		img
-			width: 135px
-			height: auto
-			display: block
-			margin: 0 auto
 	&__nav
 		display: grid
-		grid-template-columns: 1fr 1fr 1fr
+		grid-template-columns: 1fr 1fr
 		justify-items: stretch
 		align-items: center
+		justify-content: space-between
 		transition: .4s
 	&__list
 		display: flex
@@ -110,7 +101,7 @@ body
 				font-size: 18px
 				white-space: nowrap
 			&:not(:last-child)
-				margin-right: 36px
+				margin-right: 30px
 	&__social
 		display: flex
 		align-items: center
@@ -119,6 +110,8 @@ body
 			display: block
 			&:not(:last-child)
 				margin-right: 40px
+	&__socialMobile
+		display: none
 
 .footer
 	padding: 20px 0 40px 0

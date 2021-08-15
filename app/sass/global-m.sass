@@ -1,0 +1,159 @@
+@media (max-width: 1200px)
+    .title
+        font-size: 34px
+        line-height: 140%
+    .smartText
+        font-size: 28px
+        line-height: 140%
+    .header
+        padding: 0px 0px
+        height: 53px
+        display: flex
+        align-items: center
+        background: #FAFAFA
+        .container
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__burger
+            display: block
+            cursor: pointer
+            img
+                width: 25px
+                height: 25px
+        &__mobileLogo
+            display: block
+            margin-top: 4px
+            opacity: 0 
+            visibility: hidden
+            z-index: -10
+            transition: .4s
+            svg
+                width: 120px    
+        &__close
+            display: block
+            position: absolute
+            right: 20px
+            top: 20px
+            cursor: pointer
+            svg
+                width: 25px
+                height: 25px
+        &__nav
+            display: flex
+            position: fixed
+            left: -100%
+            top: 0
+            height: 100vh
+            width: 100%
+            background: #fff  
+            flex-direction: column
+            justify-content: center
+            z-index: 10
+        &__list
+            flex-direction: column
+            align-items: center
+            li
+                margin: 15px 0
+                &:not(:last-child)
+                    margin-right: 0
+                a
+                    font-size: 24px
+        &__social
+            margin-top: 40px
+            justify-content: center
+            a
+                svg
+                    width: 35px
+                    height: 35px
+                &:last-child
+                    svg
+                        width: 45px
+                        height: 45px
+        &__socialMobile
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            a
+                display: block
+                &:not(:last-child)
+                    margin-right: 30px
+
+    .footer
+        padding: 22px 22px  
+        .header__burger
+            svg
+                fill: #fff
+                width: 25px
+                height: 25px
+        &__logo
+            display: none
+        &__title
+            text-align: center
+            margin-bottom: 20px
+            display: none
+        &__menu
+            display: none
+
+@media (max-width: 767px)
+    .title
+        font-size: 18px
+        margin-bottom: 18px
+        br
+            display: none
+    .smartText
+        font-size: 12px
+    .btn
+        box-shadow: 1px 2px 24px rgba(254, 1, 130, 0.72)
+    .header
+        padding: 0px 0px
+        &__burger
+            img
+                width: 25px
+                height: 25px
+        &__close
+            display: block
+            position: absolute
+            right: 20px
+            top: 20px
+            cursor: pointer
+            svg
+                width: 15px
+                height:  15px
+        &__list
+            flex-direction: column
+            align-items: center
+            li
+                margin: 15px 0
+                &:not(:last-child)
+                    margin-right: 0
+                a
+                    font-size: 20px
+        &__socialMobile
+            a
+                display: block
+                svg
+                    max-height: 18px
+                    max-width: 20px
+                &:not(:last-child)
+                    margin-right: 17px
+        &__social
+            a
+                display: block
+                svg
+                    max-height: 25px
+                    max-width: 25px
+    
+    .footer
+        &__links
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 10px
+            a
+                margin: 0
+                &:not(:last-child)
+                    margin-right: 28px
+                svg
+                    width: 17px
+                    height: auto

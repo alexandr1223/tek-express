@@ -180,7 +180,7 @@ $(function () {
             if (document.querySelector('.header__mobileLogo')) {
                 document.querySelector('.header__mobileLogo').style.cssText = "opacity: 0; z-index: -1; visibility: hidden";
             }
-            $('.header')[0].style.borderBottom = "none";
+            $('.header')[0].style.borderBottom = "1px solid transparent";
         }
         
     });
@@ -331,8 +331,7 @@ $(function () {
             switchBlock = document.querySelector('.switch'),
             ceramic = document.querySelector('.switch__ceramic'),
             ecotek = document.querySelector('.switch__ecotek'),
-            readmore = document.querySelector('.switch__readmore'),
-            line = document.querySelector('.switch__line');
+            switchClickMe = document.querySelector('.switch__click');
 
         if (darkBtn) {
             darkBtn.addEventListener('click', () => {
@@ -341,8 +340,7 @@ $(function () {
                 switchBlock.classList.add('white-mode');
                 ceramic.style.color = '#9F9F9F';
                 ecotek.style.color = '#323232';
-                readmore.style.color = "#323232";
-                line.style.background = '#FE0182';
+                switchClickMe.style.opacity = "0";
             })
     
             lightBtn.addEventListener('click', () => {
@@ -351,16 +349,17 @@ $(function () {
                 switchBlock.classList.remove('white-mode');
                 ceramic.style.color = '#323232';
                 ecotek.style.color = '#636363';
-                readmore.style.color = "#ffffff";
-                line.style.background = '#323232';
+                switchClickMe.style.opacity = "1"
             })
         }
     }
     switchLighter();
 
     function menuOpen() {
-        document.querySelector('.header__burger').addEventListener('click', () => {
-            document.querySelector('.header__nav').style.cssText = "left: 0px"
+        document.querySelectorAll('.header__burger').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.header__nav').style.cssText = "left: 0px"
+            })
         })
         document.querySelector('.header__close').addEventListener('click', () => {
             document.querySelector('.header__nav').style.cssText = "left: -100%"

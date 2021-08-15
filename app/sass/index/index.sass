@@ -1,5 +1,3 @@
-
-
 .first
     padding-top: 60px
     .container
@@ -7,6 +5,18 @@
     &__title
         font-weight: 500
         font-family: "RobotoSlab"
+        line-height: 62px
+    &__subtitle
+        font-size: 20px
+        font-family: "CabinReg"
+        font-weight: 400
+        margin-top: 10px
+        &--bottom
+            position: absolute
+            bottom: 0 
+            left: 50%
+            transform: translate(-50%)
+            z-index: 10
     &__head
         position: absolute
         top: 80px
@@ -16,13 +26,14 @@
         display: flex
         justify-content: center
         margin-bottom: 30px
+        margin-top: 10px
         transition: .4s
     &__smartText
         margin-top: 20px
         font-style: italic
         height: 60px
     &__btn
-        margin-top: 50px
+        margin-top: 40px
         z-index: 10
     &__video
         z-index: 1
@@ -39,16 +50,16 @@
             object-fit: cover
 
 .review
-    padding-bottom: 140px
+    padding-bottom: 160px
     .container
         max-width: 100%
     &__title
-        margin-top: 130px
+        margin-top: 180px
     &__smartText
         margin-top: 20px
     &__stars
         display: flex
-        margin-top: 20px
+        margin-top: 30px
         justify-content: center
         img,svg
             margin: 0 15px
@@ -134,11 +145,16 @@
                 opacity: 1
 
 .instalation
+    overflow: hidden
     padding-bottom: 80px
     &__smartText
+        max-width: 690px
+        height: 60px
+        margin: 0 auto
         margin-top: 20px
     video
-        width: 100%
+        width: calc(100% + 80px)
+        margin-left: -40px
 
 .switch
     padding-top: 100px
@@ -153,7 +169,7 @@
         font-weight: 700
     &__block
         position: absolute
-        top: 58%
+        top: 62%
         left: 50%
         transform: translate(-50%, -50%)
         display: flex
@@ -195,42 +211,71 @@
         bottom: -10px
         left: 0
         transition: .4s
+    &__click
+        position: absolute
+        display: flex
+        flex-direction: column
+        right: 130px  
+        top: -100px
+        transition: .3s
+        span
+            font-size: 22px
+            color: rgba(99, 99, 99, 1)
+            text-transform: uppercase
+            font-family: "Harbinger"
+        svg
+            margin-left: -10px
 
-.flooring-advantages
-    padding-bottom: 60px
+.what-we-do
+    padding: 165px 0 58px 0
     &__title
-        padding-top: 100px
-        margin-bottom: 100px
+        margin-bottom: 70px
     &__block
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-gap: 75px 100px
-        margin-top: 35px
+        grid-gap: 60px
     &__item
-        max-width: 400px
+        display: flex
+        flex-direction: column
+    &__image
+        height: 397px
+        display: flex
+        img
+            display: block
+            margin-top: auto
     &__itemTitle
-        margin-top: 10px
         font-size: 24px
-        font-weight: 600
+        line-height: 35px
+        color: rgba(95, 95, 95, 1)
+        margin-bottom: 23px
+        text-align: center
     &__itemText
         font-size: 18px
-        color: #747474  
-        margin-top: 15px  
-        line-height: 130%
-        span
-            display: block
-            position: relative
-            margin-left: 15px
-            &::before
-                content: ''
-                width: 4px
-                height: 4px
-                background: #747474
-                border-radius: 50%
-                display: block   
-                position: absolute
-                left: -15px
-                top: 50%
-                transform: translateY(-50%)
-            &:not(:last-child)
-                margin-bottom: 20px
+        line-height: 26px
+        text-align: center
+
+.customer-banner
+    background: url('../images/customer-bg.png') center center/cover no-repeat
+    height: 1000px
+    &__title
+        font-weight: 500
+        font-family: "CabinReg"
+        line-height: 62px
+        padding-top: 100px
+    &__subtitle
+        font-size: 20px
+        font-family: "CabinReg"
+        font-weight: 400
+        margin-top: 15px
+        &--bottom
+            position: absolute
+            bottom: 0 
+            left: 50%
+            transform: translate(-50%)
+            z-index: 10
+    &__btn
+        display: block
+        margin-top: 50px
+        z-index: 10
+.custom
+    display: none
