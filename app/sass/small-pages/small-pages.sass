@@ -1,8 +1,9 @@
 .our-services
     padding-top: 60px
+    padding-bottom: 130px
     &__title
         margin-top: 53px
-        margin-bottom: 50px
+        margin-bottom: 0
     &__block
         display: grid
         grid-template-columns: 1fr 1fr 1fr
@@ -10,16 +11,39 @@
     &__image
         margin: 0 auto
         margin-bottom: 0
-        height: 180px
+        height: 228px
+        display: flex
+        align-items: flex-end
         img
-            height: 100%
-            width: auto
+            height: auto
+            width: 100%
             display: block
             margin: 0 auto
+    &__item
+        &:nth-child(1)
+            img
+                width: 160px
+        &:nth-child(2)
+            img
+                width: 133px
+        &:nth-child(3)
+            img
+                width: 171px
+        &:nth-child(4)
+            img
+                width: 215px
+        &:nth-child(5)
+            img
+                width: 150px
+        &:nth-child(6)
+            img
+                width: 175px
+
     &__text
         text-align: center
         font-size: 18px
         line-height: 27px
+        margin-top: 12px
 
 .customer-portal
     padding-top: 60px
