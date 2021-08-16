@@ -166,7 +166,7 @@
     &__calc
         display: flex
         margin-bottom: 33px
-        span
+        input
             font-size: 25px
             height: 39px
             line-height: 39px
@@ -206,6 +206,7 @@
     &__similarTitle
         font-size: 30px
         margin-bottom: 51px
+        text-transform: uppercase
     &__img
         margin: 0 auto
         margin-bottom: 9px
@@ -235,10 +236,9 @@
         font-weight: 500
         color: #676767
     &__price
-        font-size: 22px
+        font-size: 25px
         margin-bottom: 18px
         color: #FE0182
-        text-align: center
     &__slider
         margin: 0 20px
         padding: 30px 0
@@ -311,7 +311,7 @@
         margin-top: auto
         .market-item__calc
             margin-right: 18px
-            span
+            input
                 font-size: 14px
                 height: 25px
                 line-height: 25px
@@ -443,7 +443,7 @@
     &__calc
         display: flex
         margin-bottom: 33px
-        span
+        input
             font-size: 18px
             height: 28px
             line-height: 28px
@@ -488,13 +488,18 @@
         display: flex
         &:not(:last-child)
             margin-right: 16px
-        span
+        span,
+        input
             border: 2.78271px solid #C4C4C4
             border-radius: 3px
             padding: 16px 25px
             font-size: 16px
+            width: max-content
             &:not(:last-child)
                 margin-right: 3px
+        input
+            width: 110px
+            text-align: center
     &__btn
         margin-left: auto
 
@@ -546,6 +551,7 @@
         height: 42px
         line-height: 42px
         font-size: 14px
+        display: block
     &__left
         display: flex
         flex-direction: column
@@ -606,6 +612,8 @@
     &__content
         display: flex
         flex-direction: column
+        max-width: 300px
+        margin-right: 20px
     &__itemTitle
         font-size: 16px
         line-height: 24px
@@ -659,12 +667,11 @@
     &__arrow
         position: absolute
         right: 0
-        top: 15px
+        top: 50%
         transform: translateY(-50%)
         cursor: pointer
         transition: .4s
     &__fields
-        
         display: none
         flex-direction: column
     &__input

@@ -22,8 +22,19 @@
                     <li>
                         <a href="customer-portal.html">Customer Portal </a>
                     </li>
-                    <li>
+                    <li class="header__submenu">
                         <a href="our-services.html">Our services</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="marketplace.html">MarketPlace</a>
+                            </li>
+                            <li>
+                                <a href="career-opportunities.html">Career Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="home-page.html">Home Page</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="flooring.html">Eco-Tek Flooring</a>
@@ -83,15 +94,13 @@
                                 </div>
                                 <div class="shopping-cart__nav">
                                     <div class="shopping-cart__price">
-                                        $29.99
+                                        $30
                                     </div>
                                     <div class="shopping-cart__calc">
                                         <div class="shopping-cart__minus">
                                             <img src="images/svg/minus.svg" alt="" class="img-svg">
                                         </div>
-                                        <span>
-                                            1
-                                        </span>
+                                        <input type="text" value="1"  id="1">
                                         <div class="shopping-cart__plus">
                                             <img src="images/svg/plus.svg" alt="" class="img-svg">
                                         </div>
@@ -115,15 +124,13 @@
                                 </div>
                                 <div class="shopping-cart__nav">
                                     <div class="shopping-cart__price">
-                                        $29.99
+                                        $30
                                     </div>
                                     <div class="shopping-cart__calc">
                                         <div class="shopping-cart__minus">
                                             <img src="images/svg/minus.svg" alt="" class="img-svg">
                                         </div>
-                                        <span>
-                                            1
-                                        </span>
+                                        <input type="text" value="1" id="2">
                                         <div class="shopping-cart__plus">
                                             <img src="images/svg/plus.svg" alt="" class="img-svg">
                                         </div>
@@ -132,13 +139,13 @@
                             </div>
                         </div>
                         <div class="shopping-cart__bottom">
-                            <div class="shopping-cart__quantity">
+                            <div class="shopping-cart__quantity shopping-cart__quantityCount">
                                 <span>Quantity of goods</span>
-                                <span>2</span>
+                                <span>0</span>
                             </div>
-                            <div class="shopping-cart__quantity">
+                            <div class="shopping-cart__quantity shopping-cart__quantitySum">
                                 <span>Total price of goods</span>
-                                <span>$59.98</span>
+                                <input type="text" value="$59.98">
                             </div>
                             <button class="shopping-cart__btn btn">
                                 buy

@@ -95,11 +95,18 @@ body
 		transition: .4s
 	&__list
 		display: flex
+		margin-top: 10px
 		li            
+			position: relative
 			a
 				color: #646464
+				transition: .4s
 				font-size: 18px
 				white-space: nowrap
+				border-bottom: 1px solid transparent
+				&:hover
+					transition: .4s
+					border-bottom: 1px solid #646464
 			&:not(:last-child)
 				margin-right: 30px
 	&__social
@@ -112,6 +119,34 @@ body
 				margin-right: 40px
 	&__socialMobile
 		display: none
+	&__submenu
+		padding-bottom: 10px
+		&:hover
+			.submenu
+				opacity: 1
+				visibility: visible
+				z-index: 1
+	.submenu
+		display: flex
+		flex-direction: column
+		position: absolute
+		top: 30px
+		background: #646464
+		border-radius: 5px
+		padding: 12px
+		opacity: 0
+		visibility: hidden
+		z-index: -10
+		transition: .4s
+		li            
+			a
+				color: #fff
+				font-size: 18px
+				line-height: 32px
+				white-space: nowrap
+			&:not(:last-child)
+				margin-bottom: 12px
+
 
 .footer
 	padding: 20px 0 40px 0

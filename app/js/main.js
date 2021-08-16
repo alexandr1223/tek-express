@@ -1,6 +1,5 @@
 $(function () {
 
-    console.log(window.innerWidth)
     // if (window.innerWidth > 990) {
     //     new WOW().init();
     // } else {
@@ -277,11 +276,11 @@ $(function () {
             $(".delivery__fields").css("display", "flex")
             if ($(".delivery__fields").hasClass('active')) {
                 $(".delivery__fields").removeClass('active')
-                $('.delivery__arrow').css({"transform" : "rotate(0deg)"})
+                $('.delivery__arrow').css({"transform" : "rotate(0deg)", "top" : "15px"})
             } else {
                 
                 $(".delivery__fields").addClass('active')
-                $('.delivery__arrow').css({"transform" : "rotate(90deg)"})
+                $('.delivery__arrow').css({"transform" : "rotate(90deg)", "top" : "15px"})
             }
             
         });
@@ -354,6 +353,63 @@ $(function () {
         }
     }
     switchLighter();
+
+    function plusMinus(plus, minus) {
+        
+        let count = 1;
+        if (document.querySelector('.shopping-cart__quantity')) {
+            $('.shopping-cart__calc input').each(item => {
+                count += item
+            })
+            $('.shopping-cart__quantityCount span')[1].textContent =  count
+        }
+        
+        $(plus).click(function () {
+            $(this).prev().val(+$(this).prev().val() + 1);
+            if (document.querySelector('.shopping-cart__quantity')) {
+                $('.shopping-cart__calc input').each(item => {
+                    count += item
+                })
+                $('.shopping-cart__quantityCount span')[1].textContent =  count
+                let sum = 0;
+                if ($('.shopping-cart__quantity')) {                
+                    document.querySelectorAll('.shopping-cart__calc input').forEach(function (item, index) {
+                        var mystring = item.parentElement.parentElement.querySelector('.shopping-cart__price').textContent;
+                        mystring = mystring.replace('$','').replace(/\s/g, '')
+                        let sum1 = item.value * parseInt(mystring)
+                        sum += sum1
+                    })
+                    $('.shopping-cart__quantitySum input')[0].value = sum
+                }
+            }
+            
+        });
+        $(minus).click(function () {
+            if ($(this).next().val() > 0) {
+                $(this).next().val(+$(this).next().val() - 1);
+                if (document.querySelector('.shopping-cart__quantity')) {
+                    $('.shopping-cart__calc input').each(item => {
+                        count -= item
+                    })
+                }
+            } 
+            if (document.querySelector('.shopping-cart__quantity')) {
+                $('.shopping-cart__quantityCount span')[1].textContent =  count
+                let sum = 0;
+                if ($('.shopping-cart__quantity')) {                
+                    document.querySelectorAll('.shopping-cart__calc input').forEach(function (item, index) {
+                        var mystring = item.parentElement.parentElement.querySelector('.shopping-cart__price').textContent;
+                        mystring = mystring.replace('$','').replace(/\s/g, '')
+                        let sum1 = item.value * parseInt(mystring)
+                        sum += sum1
+                    })
+                    $('.shopping-cart__quantitySum input')[0].value = sum
+                }
+            }
+        });
+    }
+    plusMinus('.market-item__plus', '.market-item__minus');
+    plusMinus('.shopping-cart__plus', '.shopping-cart__minus');
 
     function menuOpen() {
         document.querySelectorAll('.header__burger').forEach(item => {
