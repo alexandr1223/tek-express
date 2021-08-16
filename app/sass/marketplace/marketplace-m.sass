@@ -24,6 +24,30 @@
         &__img
             margin: 0 auto
             margin-bottom: 15px
+        &__img2
+            display: none
+        &__img3
+            display: none
+        &__img1
+            width: 80px
+            left: 10px
+            top: 10px
+            height: auto
+        &__img4
+            right: 0
+            top: -10px
+            width: 60px
+            height: auto
+        &__img5
+            left: 140px
+            bottom: -10px
+            width: 70px
+            height: auto
+        &__img6
+            right: 80px
+            bottom: -20px
+            width: 90px
+            height: auto
         &__product
             &--row
                 flex-direction: row
@@ -87,11 +111,13 @@
         &__image5
             right: -100px
             width: 300px
+        &__title
+            margin: 40px 0
     .market-item
         &__block
             display: flex
             flex-direction: column
-        
+            margin-top: 40px
         &__image
             width: 100%
             max-width: 100%
@@ -114,7 +140,7 @@
                 width: 15px
         &__calc
             margin-bottom: 15px
-            span
+            span,input
                 height: 30px
                 line-height: 28px
                 width: 50px
@@ -123,6 +149,7 @@
             font-size: 16px
         &__similarTitle
             margin-bottom: 10px
+            font-size: 24px
         &__productTitle
             font-size: 22px
             margin-bottom: 15px
@@ -137,6 +164,9 @@
                 grid-template-columns: 1fr
         &__banner
             height: 150px
+            padding: 20px
+            span
+                font-size: 20px
         &__search
             width: 150px
             input
@@ -149,6 +179,34 @@
                 width: 15px
                 height: auto
                 right: 8px
+        &__img2
+            display: block
+            width: 20px
+            left: 150px
+            top: -5px
+        &__img3
+            display: block
+            width: 40px
+        &__img1
+            width: 50px
+            left: -10px
+            top: -10px
+            height: auto
+        &__img4
+            right: 0
+            top: -10px
+            width: 40px
+            height: auto
+        &__img5
+            left: 60px
+            bottom: -10px
+            width: 50px
+            height: auto
+        &__img6
+            right: 70px
+            bottom: -10px
+            width: 50px
+            height: auto
         &__nav
             padding-bottom: 10px
         &__sort
@@ -214,6 +272,7 @@
                 height: 36px
                 line-height: 36px
     .shopping-cart
+        padding-top: 50px
         &__item
             display: flex
             flex-direction: column
@@ -235,8 +294,11 @@
         &__calc 
             margin-bottom: 0
         &__quantity
-            span
+            input,span
                 padding: 12px 20px
+        &__title
+            font-size: 24px
+            margin: 40px 0
 
     .checkout
         &__type
